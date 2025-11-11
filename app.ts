@@ -1,6 +1,7 @@
-import Todo from './modules/Todo';
-import User from './modules/User';
-import { ScientificCalculator, Calculator } from './index';
+import { ScientificCalculator, Calculator } from '@yourorg/my-libp2p-sdk';
+import Todo from '@yourorg/my-libp2p-sdk/Todo';
+import User from '@yourorg/my-libp2p-sdk/User';
+
 const sci = new ScientificCalculator();
 console.log(sci instanceof ScientificCalculator); // true
 console.log(sci instanceof Calculator);           // true
@@ -13,4 +14,3 @@ const newUser = new User(1, 'john_doe');
 newUser.addTodo(user);
 console.log(newUser.getTodos());
 console.log(newUser)
-
