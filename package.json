@@ -1,0 +1,28 @@
+{
+  "name": "my-project-template",
+  "version": "0.0.2",
+  "description": "My awesome project",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch ./src/app.ts",
+    "start": "bun ./src/app.ts",
+    "type-docs": "typedoc"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typedoc": "^0.28.14"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "typedocOptions": {
+    "entryPointStrategy": "expand",
+    "entryPoints": ["src"],
+    "out": "docs/api",
+    "theme": "default",
+    "includeVersion": true,
+    "hideGenerator": true
+  }
+}
