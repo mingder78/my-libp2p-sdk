@@ -9,10 +9,12 @@
     "dev": "bun --watch ./src/app.ts",
     "start": "bun ./src/app.ts",
     "type-docs": "typedoc",
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@types/bun": "latest",
+    "@vitest/coverage-v8": "4.0.8",
     "typedoc": "^0.28.14",
     "vitest": "^4.0.8"
   },

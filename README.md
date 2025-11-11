@@ -26,6 +26,18 @@ User {
   getTodos: [Function: getTodos],
 }
 ```
+## test
+
+```sh
+bun run test
+✓ sum.test.js (1)
+  ✓ adds 1 + 2 to equal 3
+
+Test Files  1 passed (1)
+     Tests  1 passed (1)
+  Start at  02:15:44
+  Duration  311ms
+```
 
 ## install
 To install dependencies:
