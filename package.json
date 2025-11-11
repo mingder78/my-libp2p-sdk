@@ -1,5 +1,5 @@
 {
-  "name": "my-libp2p-sdk",
+  "name": "@yourorg/my-libp2p-sdk",
   "version": "0.0.1",
   "description": "A high-end libp2p sdk for p2p project",
   "type": "module",
