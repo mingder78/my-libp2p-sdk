@@ -1,20 +1,20 @@
 import Todo from './Todo';
 
 /**
- * Creates a new User
- * @property {number} id - User Id
- * @property {string} username - User username
+ * Creates a new Peer
+ * @property {number} id - Peer Id
+ * @property {string} peername - Peer name
  * @method addTodo {Function} - Adds new todo
  * @method getTodos {Function} - Retrieves all todos
  */
-export default class User {
+export default class Peer {
   id: number;
-  username: string;
+  peername: string;
   #todos: Todo[] = [];
 
-  constructor(id: number, username: string) {
+  constructor(id: number, peername: string) {
     this.id = id;
-    this.username = username;
+    this.peername = peername;
   }
 
   /**

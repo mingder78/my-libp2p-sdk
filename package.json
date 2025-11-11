@@ -2,19 +2,36 @@
   "name": "my-libp2p-sdk",
   "version": "0.0.1",
   "description": "A high-end libp2p sdk for p2p project",
-  "module": "index.ts",
   "type": "module",
   "private": true,
   "scripts": {
     "dev": "bun --watch ./src/app.ts",
     "start": "bun ./src/app.ts",
+    "build": "bun run build.mjs",
     "type-docs": "typedoc",
+    "show-docs": "npx serve docs/api",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "bun run build && bun type-docs"
   },
+  "files": [
+    "dist",
+    "docs/api",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "vitest",
+    "typedoc",
+    "react",
+    "bun"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "@types/bun": "latest",
     "@vitest/coverage-v8": "4.0.8",
+    "bun-plugin-dts": "^0.3.0",
     "typedoc": "^0.28.14",
     "vitest": "^4.0.8"
   },
@@ -28,5 +45,6 @@
     "theme": "default",
     "includeVersion": true,
     "hideGenerator": true
-  }
+  },
+  "dependencies": {}
 }

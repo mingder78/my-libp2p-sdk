@@ -1,5 +1,9 @@
 import Todo from './modules/Todo';
 import User from './modules/User';
+import { ScientificCalculator, Calculator } from './index';
+const sci = new ScientificCalculator();
+console.log(sci instanceof ScientificCalculator); // true
+console.log(sci instanceof Calculator);           // true
 // Example usage
 const user = new Todo(1, 'Sample Todo', 'This is a sample todo item.', false);
 console.log(user);
